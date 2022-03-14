@@ -4,12 +4,12 @@ import torch
 import torch.nn.functional as F
 from omegaconf import OmegaConf
 
-from ..training.data.datasets import make_constant_area_crop_params
-from ..training.losses.distance_weighting import make_mask_distance_weighter
-from ..training.losses.feature_matching import feature_matching_loss, masked_l1_loss
-from ..training.modules.fake_fakes import FakeFakesGenerator
-from ..training.trainers.base import BaseInpaintingTrainingModule, make_multiscale_noise
-from ..utils import add_prefix_to_keys, get_ramp
+from ..data.datasets import make_constant_area_crop_params
+from ..losses.distance_weighting import make_mask_distance_weighter
+from ..losses.feature_matching import feature_matching_loss, masked_l1_loss
+from ..modules.fake_fakes import FakeFakesGenerator
+from ..trainers.base import BaseInpaintingTrainingModule, make_multiscale_noise
+from ...utils import add_prefix_to_keys, get_ramp
 
 LOGGER = logging.getLogger(__name__)
 
