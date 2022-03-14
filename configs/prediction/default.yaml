@@ -3,7 +3,7 @@ outdir: no  # to be overriden in CLI
 
 model:
   path: no  # to be overriden in CLI
-  checkpoint: ckpt.ckpt
+  checkpoint: best.ckpt
 
 dataset:
   kind: default
